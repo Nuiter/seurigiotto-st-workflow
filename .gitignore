@@ -1,3 +1,4 @@
+# ==== R & RStudio Standard ====
 # History files
 .Rhistory
 .Rapp.history
@@ -9,6 +10,14 @@
 # User-specific files
 .Ruserdata
 
+# R Environment Variables
+.Renviron
+
+# RStudio files
+.Rproj.user/
+*.Rproj
+.Rproj
+
 # Example code in package build process
 *-Ex.R
 
@@ -17,9 +26,6 @@
 
 # Output files from R CMD check
 /*.Rcheck/
-
-# RStudio files
-.Rproj.user/
 
 # produced vignettes
 vignettes/*.html
@@ -31,13 +37,8 @@ vignettes/*.pdf
 # knitr and R markdown default cache directories
 *_cache/
 /cache/
-
-# Temporary files created by R markdown
 *.utf8.md
 *.knit.md
-
-# R Environment Variables
-.Renviron
 
 # pkgdown site
 docs/
@@ -47,3 +48,50 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# ==== Bioinformatics / Data Science ====
+*.rds
+*.RData
+*.csv
+*.tsv
+*.h5
+*.hdf5
+*.h5ad
+*.loom
+*.mtx
+*.log
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.tiff
+*.svg
+
+# Python/conda/Notebooks
+__pycache__/
+*.pyc
+*.pyo
+*.ipynb_checkpoints
+.env
+*.env
+.env.*
+
+# Environment management for R and Python
+renv/library/
+renv/staging/
+renv/python/
+.env/
+
+# Allow important files (example data/scripts/docs) to be tracked if needed
+!/data/README.md
+!/scripts/
+!/docs/
+
+# Temporary or backup files
+*.tmp
+*.bak
+*.swp
+
+# System files
+.DS_Store
+Thumbs.db
